@@ -84,13 +84,14 @@ void main()
 {
 	Bsp_Init();
 	
-	welcome();
+	
     /*mcu_set_wifi_mode(0);
     if((mcu_get_wifi_work_state() == SMART_CONFIG_STATE) || (mcu_get_wifi_work_state() == AP_STATE))
 	{
         I2C_init(4);
 		OLED_ShowStr(24,1,"reset wifi",16);
 	}*/
+    welcome();
     sht30_read(); 
     while(1)
     {

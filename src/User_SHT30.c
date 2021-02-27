@@ -120,7 +120,15 @@ void sht30_read()
 		AT = 1.07*T+0.2*e-2.7;            //体感温度计算
 		
 		I2C_init(4);
-		
+		if(T>=31)
+        {
+            mcu_set_wifi_mode(0);
+            if((mcu_get_wifi_work_state() == SMART_CONFIG_STATE) || (mcu_get_wifi_work_state() == AP_STATE))
+	        {
+                I2C_init(4);
+		        OLED_ShowStr(24,1,"reset wifi",16);
+	        }
+        }
 		OLED_ShowNum(32,4,T,2,16);   //显示温度
 		if(T>0)
 			OLED_ShowChar(48,4,'`',16);

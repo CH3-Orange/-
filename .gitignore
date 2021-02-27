@@ -28,3 +28,8 @@ Listings/User_SHT30.lst
 Listings/User_Timer.lst
 Listings/User_Uart.lst
 test.uvgui.Orange
+Objects/main.__i
+Objects/User_SHT30.__i
+.vs/slnx.sqlite
+.vs/VSWorkspaceState.json
+.vs/STC8A8K-OLED_IIC_SHT30_涂鸦测试/v16/.suo
