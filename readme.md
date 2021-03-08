@@ -31,3 +31,8 @@ For more information, please check Tuya Developer Website.**
 ![原理图](pic/Vuforia_front.jpg)
 
 ![原理图](pic/Vuforia_back.jpg)
+
+下面是基础功能测试图，即模块联网后通过手机端查看状态值（用的涂鸦的公板，自己实现的app还没移植测试好）
+
+![功能测试图](pic/功能测试图片.png)
+
